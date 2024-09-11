@@ -49,3 +49,23 @@ aside {
     }
   }
 }
+
+@media (width <= 425px) {
+  #app {
+    grid-template-columns: 1fr;
+    overflow: auto;
+  }
+
+  main {
+    order: 2;
+    padding: 1.5rem;
+    overflow: initial;
+  }
+
+  aside {
+    & h2,
+    & p {
+      display: none;
+    }
+  }
+}
